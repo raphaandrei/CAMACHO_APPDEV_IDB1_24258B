@@ -1,1 +1,10 @@
-<p>data-binding-demo works!</p>
+<h1>{{ pageTitle }}</h1>
+<p>Current time: {{ currentTime | date:'medium' }}</p>
+
+<img [src]="imageUrl" [alt]="'Angular Logo'">
+<button [disabled]="isDisabled">Click Me</button>
+
+<button (click)="incrementCount()">Clicks: {{ clickCount }}</button>
+
+<input [(ngModel)]="name" placeholder="Enter your name">
+<p>Hello, {{ name }}!</p>
